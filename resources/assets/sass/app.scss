@@ -5,3 +5,14 @@
 
 // Media Styles
 @import "../talvbansal/media-manager/css/media-manager.css";
+
+.mapa{
+	fill:#fff;
+	stroke:#000;
+	stroke-miterlimit:10;
+}
+.activo{
+	fill:rgba(0, 0, 255, 0.3);
+	stroke:#000;
+	stroke-miterlimit:10;
+}

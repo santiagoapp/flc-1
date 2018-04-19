@@ -15,16 +15,7 @@
 		<div class="box">
 			<!-- /.box-header -->
 			<div id="app" class="box-body">
-
-				<div class="row">
-					<div class="col-md-4" id="asd">
-						Lista
-					</div>
-					<div class="col-md-8">
-						<!-- <img src="{{asset('img/mapa.svg')}}" alt=""> -->
-						@include('svg/mapa')
-					</div>
-				</div>
+				<zonas></zonas>
 			</div>
 			<!-- /.box-body -->
 		</div>
@@ -37,11 +28,7 @@
 
 <link rel="stylesheet" href="{{asset('css/app.css')}}">
 <style>
-.mapa{
-	fill:none;
-	stroke:#000;
-	stroke-miterlimit:10;
-}
+
 
 </style>
 @stop
@@ -49,10 +36,10 @@
 
 <script src="{{ asset('js/app.js') }}"></script>
 <script>
-	$('#asd').hover(function() {
-		$('rect').css("fill","rgba(0, 191, 255,0.2)")
-	}, function() {
-		$('rect').css("fill","none")
-	});
+	// $('#asd').hover(function() {
+	// 	$('rect').css("fill","rgba(0, 191, 255,0.2)")
+	// }, function() {
+	// 	$('rect').css("fill","none")
+	// });
 </script>
 @stop

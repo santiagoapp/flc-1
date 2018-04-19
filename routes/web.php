@@ -20,7 +20,10 @@ Auth::routes();
 Route::group(['middleware' => ['auth']], function() {
 	Route::get('/admin/inicio', 'HomeController@index')->name('inicio');
 	Route::get('/admin/ofimatica/ver', 'OfimaticaController@index')->name('ofimatica');
-
+	// mapa de la planta
+	Route::get('/admin/mapa', 'MapaController@index')->name('mapa');
+	Route::get('/admin/mapa/get', 'MapaController@getZonas');
+	
 	Route::get('/admin/talento/personal', 'PersonaController@index')->name('personal');
 	Route::get('/admin/talento/cargos', 'CargoController@index')->name('cargos');
 	Route::get('/admin/talento/cargos/get', 'CargoController@getCargos');

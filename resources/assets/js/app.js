@@ -16,10 +16,11 @@
  */
 // require('./../talvbansal/media-manager/js/media-manager');
 
- Vue.component('cargo', require('./components/Cargo.vue'));
- Vue.component('roles', require('./components/Roles.vue'));
- Vue.component('users', require('./components/User.vue'));
+Vue.component('cargo', require('./components/Cargo.vue'));
+Vue.component('roles', require('./components/Roles.vue'));
+Vue.component('users', require('./components/User.vue'));
+Vue.component('zonas', require('./components/Zona.vue'));
 
- const app = new Vue({
- 	el: '#app'
- });
+const app = new Vue({
+	el: '#app'
+});

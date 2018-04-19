@@ -17,6 +17,8 @@ class DatabaseSeeder extends Seeder
             PermissionsTableSeeder::class,
             CargosTableSeeder::class,
             PersonasTableSeeder::class,
+            PlantasTableSeeder::class,
+            ZonasTableSeeder::class,
         ]);
     }
 }
