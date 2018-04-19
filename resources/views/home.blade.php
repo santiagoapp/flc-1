@@ -3,9 +3,10 @@
 @section('title', 'Inicio')
 
 @section('content_header')
-<h1>
-	Sistema de alertas
-	<small>Ordenes de trabajo para el día {{ Carbon\Carbon::now()->format('d/m/y') }}</small>
+<h1 class="text-center">
+	<!-- {{ setlocale(LC_TIME, 'Spanish') }} -->
+	<!-- {{ Carbon\Carbon::setUtf8(true) }} -->
+	ORDENES DE TRABAJO: {{ Carbon\Carbon::now()->formatLocalized('%A %d %B %Y') }}
 </h1>
 
 @stop
@@ -14,22 +15,20 @@
 <div class="row">
 	<div class="col-xs-12">
 		<div class="box">
-			<div class="box-header">
-				<h3 class="box-title">Ordenes de trabajo</h3>
-
-				<div class="box-tools">
-					<div class="input-group input-group-sm" style="width: 150px;">
-						<input type="text" name="table_search" class="form-control pull-right" placeholder="Buscar">
-
-						<div class="input-group-btn">
-							<button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-						</div>
-					</div>
-				</div>
-			</div>
 			<!-- /.box-header -->
-			<div id="app" class="box-body table-responsive">
-				
+			<div id="app" class="box-body">
+				<div class="alert alert-info alert-dismissible">
+					<h4><i class="icon fa fa-info"></i> OT</h4>
+					ORDEN NORMAL
+				</div>
+				<div class="alert alert-warning alert-dismissible">
+					<h4><i class="icon fa fa-warning"></i> OT</h4>
+					ORDEN URGENTE
+				</div>
+				<div class="alert alert-success alert-dismissible">
+					<h4><i class="icon fa fa-check"></i> OT</h4>
+					ORDEN 
+				</div>
 			</div>
 			<!-- /.box-body -->
 		</div>
@@ -38,6 +37,11 @@
 </div>
 @stop
 
+@section('css')
+
+<link rel="stylesheet" href="{{asset('css/app.css')}}">
+
+@stop
 @section('js')
 
 <script src="{{ asset('js/app.js') }}"></script>

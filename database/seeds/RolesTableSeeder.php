@@ -21,14 +21,15 @@ class RolesTableSeeder extends Seeder
     		'Gerencia General',
     		'Contabilidad',
     		'Almacén',
-    		'Controller',
-    		'Super Usuario'
-    	];
-    	
-    	foreach ($roles as $rol) {
-    		factory(Role::class)->create([
-    			'name'=>$rol
-    		]);
-    	}
+            'Controller',
+            'Laboratorio',
+            'Super Usuario'
+        ];
+        
+        foreach ($roles as $rol) {
+            factory(Role::class)->create([
+                'name'=>$rol
+            ]);
+        }
     }
 }

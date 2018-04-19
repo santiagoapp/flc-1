@@ -11,7 +11,8 @@
         "jeroennoten/laravel-adminlte": "^1.23",
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0",
-        "spatie/laravel-permission": "^2.11"
+        "spatie/laravel-permission": "^2.11",
+        "talvbansal/media-manager": "^2.5"
     },
     "require-dev": {
         "filp/whoops": "~2.0",

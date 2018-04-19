@@ -171,7 +171,7 @@
                 }).catch(error =>{
                     toastr.error("Ha ocurrido un error");
                 });
-            }
+            },
         }
     }
 </script>

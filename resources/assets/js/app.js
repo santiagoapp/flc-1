@@ -14,9 +14,11 @@
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+// require('./../talvbansal/media-manager/js/media-manager');
 
  Vue.component('cargo', require('./components/Cargo.vue'));
  Vue.component('roles', require('./components/Roles.vue'));
+ Vue.component('users', require('./components/User.vue'));
 
  const app = new Vue({
  	el: '#app'

@@ -58,7 +58,7 @@ return [
     |
     */
 
-    'layout' => null,
+    'layout' => 'fixed',
 
     /*
     |--------------------------------------------------------------------------
@@ -114,7 +114,6 @@ return [
             'icon'        => 'dashboard',
             'icon_color' => 'aqua',
             'url'  => 'admin/inicio',
-            'can'  => ''
         ],
         [
             'text' => 'Estadisticas',

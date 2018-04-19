@@ -31,4 +31,10 @@ Route::group(['middleware' => ['auth']], function() {
 	Route::post('/admin/roles/permisos/get', 'RolesController@getPermissionsByRole');
 	Route::post('/admin/roles/permisos/set', 'RolesController@setPermissionsByRole');
 	Route::get('/admin/permisos/get', 'RolesController@getPermisos');
+	// rutas para la gestion de usuarios
+	Route::get('/admin/usuarios', 'UserController@index')->name('users');
+	Route::get('/admin/usuarios/get', 'UserController@getUsers');
+	Route::post('/admin/usuarios/delete', 'UserController@deleteUser');
+
+	\TalvBansal\MediaManager\Routes\MediaRoutes::get();
 });
