@@ -23,8 +23,10 @@ Route::group(['middleware' => ['auth']], function() {
 	// mapa de la planta
 	Route::get('/admin/mapa', 'MapaController@index')->name('mapa');
 	Route::get('/admin/mapa/get', 'MapaController@getZonas');
-	
+	// rutas para el personal
 	Route::get('/admin/talento/personal', 'PersonaController@index')->name('personal');
+	Route::get('/admin/talento/personal/get', 'PersonaController@getPersonas');
+	// rutas de los cargos
 	Route::get('/admin/talento/cargos', 'CargoController@index')->name('cargos');
 	Route::get('/admin/talento/cargos/get', 'CargoController@getCargos');
 	// rutas de los roles y permisos
@@ -37,6 +39,8 @@ Route::group(['middleware' => ['auth']], function() {
 	// rutas para la gestion de usuarios
 	Route::get('/admin/usuarios', 'UserController@index')->name('users');
 	Route::get('/admin/usuarios/get', 'UserController@getUsers');
+	Route::post('/admin/usuarios/update', 'UserController@update');
+	Route::get('/admin/usuarios/get/user', 'UserController@getUser');
 	Route::post('/admin/usuarios/delete', 'UserController@deleteUser');
 
 	\TalvBansal\MediaManager\Routes\MediaRoutes::get();

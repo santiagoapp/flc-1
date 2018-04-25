@@ -96,7 +96,7 @@
 
 <script>
     $('.select2').select2();
-    import axios from 'axios'
+import axios from 'axios'
     import toastr from 'toastr'
     import swal from 'sweetalert'
 

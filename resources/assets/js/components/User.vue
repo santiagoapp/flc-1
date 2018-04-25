@@ -16,7 +16,7 @@
                             <td>{{ user.email }}</td>
                             <td>
                                 <div class="btn-group">
-                                    <a v-on:click = "showUsers(user.name)" class="btn btn-primary"><span class="fa fa-eye"></span></a>
+                                    <a v-on:click = "showUser(user.id)" class="btn btn-primary"><span class="fa fa-eye"></span></a>
                                     <a v-on:click = "deleteUser(user.id)" class="btn btn-danger"><span class="fa fa-close"></span></a>
                                 </div>
                             </td>
@@ -28,10 +28,29 @@
         <div v-if="isActive" class="col-md-4">
             <form role="form">
                 <div class="form-group">
-
+                    <label>Nombre</label>
+                    <input v-model="user.id" class="form-control" type="hidden">
+                    <input v-model="user.name" class="form-control" type="text">
                 </div>
                 <div class="form-group">
-                    <a class="btn btn-primary btn-block"><span class="fa fa-plus"></span> Actualizar</a>
+                    <label>Correo</label>
+                    <input v-model="user.correo" class="form-control" type="text">
+                </div>
+                <div class="form-group">
+                    <label>Contraseña Anterior</label>
+                    <input v-model="user.contraseña_anterior" class="form-control" type="password">
+                </div>
+                <div class="form-group">
+                    <label>Nueva Contraseña</label>
+                    <input v-model="user.contraseña_nueva" class="form-control" type="password">
+                </div>
+                <div class="form-group">
+                    <label>Repetir Nueva Contraseña</label>
+                    <input v-model="user.contraseña_repetida" class="form-control" type="password">
+                </div>
+                <div class="btn-group">
+                    <a v-on:click = "updateUser()" class="btn btn-primary"><span class="fa fa-plus"></span> Actualizar</a>
+                    <a v-on:click = "hideUser()" class="btn btn-danger"><span class="fa fa-close"></span> Cancelar</a>
                 </div>
             </form>
         </div>
@@ -44,12 +63,22 @@
     import toastr from 'toastr'
     import swal from 'sweetalert'
 
+    axios.defaults.headers.common['csrfToken'] = document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+
     export default {
         data(){
             return{
                 users:[],
                 isActive: false,
                 col: 'col-md-12',
+                user: {
+                    'id': '',
+                    'name': '',
+                    'correo': '',
+                    'contraseña_anterior': '',
+                    'contraseña_nueva': '',
+                    'contraseña_repetida': '',
+                },
             }
         },
         created: function() {
@@ -62,9 +91,46 @@
                     this.users = response.data
                 });
             },
-            showUsers(name){
+            getUser(id){
+                var url = 'usuarios/get/user?id='+id
+                axios.get(url).then(response => {
+                    this.user.id = response.data.id
+                    this.user.name = response.data.name
+                    this.user.correo = response.data.email
+                    this.user.contraseña_anterior = response.data.password
+                });
+            },
+            showUser(id){
+                this.getUser(id);
                 this.isActive = true;
                 this.col = 'col-md-8';
+            },
+            hideUser(){
+                this.isActive = false;
+                this.col = 'col-md-12';
+                this.user.name = '';
+            },
+            updateUser() {
+                var url = 'usuarios/update'
+
+                axios.post(url, this.user).then( response=> {
+                    
+                    if (response.data.mensaje='Usuario actualizado') {
+                        this.user = {
+                            id: '',
+                            name: '',
+                            correo: '',
+                            contraseña_anterior: '',
+                            contraseña_nueva: '',
+                            contraseña_repetida: '', 
+                        };
+                        this.hideUser();
+                        toastr.success(response.data.mensaje);
+                    }else{
+                        toastr.error(response.data.mensaje);
+                    }
+                    
+                });
             },
             deleteUser(id){
                 var url = 'usuarios/delete';
