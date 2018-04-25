@@ -35,11 +35,5 @@
 @section('js')
 
 <script src="{{ asset('js/app.js') }}"></script>
-<script>
-	// $('#asd').hover(function() {
-	// 	$('rect').css("fill","rgba(0, 191, 255,0.2)")
-	// }, function() {
-	// 	$('rect').css("fill","none")
-	// });
-</script>
+
 @stop

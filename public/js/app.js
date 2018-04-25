@@ -1650,7 +1650,6 @@ window.Vue = __webpack_require__(16);
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-// require('./../talvbansal/media-manager/js/media-manager');
 
 Vue.component('cargo', __webpack_require__(18));
 Vue.component('roles', __webpack_require__(39));
@@ -25133,8 +25132,25 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-
+$('.select2').select2();
 
 
 
@@ -25163,7 +25179,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     created: function created() {
         this.getZonas();
-        $('.select2').select2();
     },
     methods: {
         getZonas: function getZonas() {
@@ -25190,29 +25205,61 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "row" }, [
     _c("div", { staticClass: "col-md-4" }, [
-      _c("form", [
-        _c("div", { staticClass: "form-group" }, [
-          _c("label", [_vm._v("Multiple")]),
-          _vm._v(" "),
-          _c(
-            "select",
-            {
-              staticClass: "form-control select2",
-              staticStyle: { width: "100%" },
-              attrs: {
-                multiple: "multiple",
-                "data-placeholder": "Select a State"
-              }
-            },
-            [
-              _vm._l(_vm.zonas, function(zona) {
-                return [_c("option", [_vm._v(_vm._s(zona.nombre))])]
-              })
-            ],
-            2
-          )
-        ])
-      ])
+      _c(
+        "form",
+        [
+          [
+            _c("label", [_vm._v("Zona (numero de la zona)")]),
+            _vm._v(" "),
+            _c("div", { staticClass: "input-group" }, [
+              _vm._m(0),
+              _vm._v(" "),
+              _c(
+                "select",
+                {
+                  staticClass: "form-control select2",
+                  staticStyle: { width: "100%" },
+                  attrs: {
+                    multiple: "multiple",
+                    "data-placeholder": "Select a State"
+                  }
+                },
+                [
+                  _vm._l(_vm.zonas, function(zona) {
+                    return [_c("option", [_vm._v(_vm._s(zona.nombre))])]
+                  })
+                ],
+                2
+              )
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "help-block" }, [
+              _vm._v("Puesto de trabajo dispuesto en la instalación")
+            ]),
+            _vm._v(" "),
+            _c("label", [_vm._v("Operario (numero de la zona)")]),
+            _vm._v(" "),
+            _c("div", { staticClass: "input-group" }, [
+              _vm._m(1),
+              _vm._v(" "),
+              _c(
+                "select",
+                {
+                  staticClass: "form-control",
+                  attrs: { placeholder: "Select a State" }
+                },
+                [
+                  _vm._l(_vm.zonas, function(zona) {
+                    return [_c("option", [_vm._v(_vm._s(zona.nombre))])]
+                  })
+                ],
+                2
+              )
+            ])
+          ]
+        ],
+        2
+      )
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "col-md-8" }, [
@@ -25229,7 +25276,7 @@ var render = function() {
             staticClass: "mapa",
             attrs: {
               points:
-                "81.5 409.73 120.5 409.73 120.5 328.73 313.5 328.73 313.5 242.73 367.5 242.73 367.5 712.73 81.5 712.73 81.5 409.73"
+                "0.5 0.73 574.5 0.73 801.5 87.73 801.5 712.73 0.5 712.73 0.5 0.73"
             }
           }),
           _vm._v(" "),
@@ -25237,7 +25284,7 @@ var render = function() {
             staticClass: "mapa",
             attrs: {
               points:
-                "0.5 0.73 574.5 0.73 801.5 87.73 801.5 712.73 0.5 712.73 0.5 0.73"
+                "81.5 409.73 120.5 409.73 120.5 328.73 313.5 328.73 313.5 242.73 367.5 242.73 367.5 712.73 81.5 712.73 81.5 409.73"
             }
           }),
           _vm._v(" "),
@@ -25409,7 +25456,24 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-addon" }, [
+      _c("i", { staticClass: "fa fa-slack" })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-addon" }, [
+      _c("i", { staticClass: "fa fa-user" })
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {

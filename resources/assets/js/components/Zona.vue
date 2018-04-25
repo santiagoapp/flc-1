@@ -1,24 +1,41 @@
 <template>
     <div class="row">
         <div class="col-md-4">
-                <form>
-                    <div class="form-group">
-                    <label>Multiple</label>
-                    <select class="form-control select2" multiple="multiple" data-placeholder="Select a State"
-                    style="width: 100%;">
-                    <template v-for="zona in zonas">
-                        <option>{{zona.nombre}}</option>
-                    </template>
-                    </select>
+            <form>
+                <template>
+                        <label>Zona (numero de la zona)</label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-slack"></i>
+                        </div>
+                        <select class="form-control select2" multiple="multiple" data-placeholder="Select a State"
+                        style="width: 100%;">
+                            <template v-for="zona in zonas">
+                                <option>{{zona.nombre}}</option>
+                            </template>
+                        </select>
                     </div>
-                </form>
+                    <span class="help-block">Puesto de trabajo dispuesto en la instalación</span>
+                    <label>Operario (numero de la zona)</label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <select class="form-control" placeholder="Select a State">
+                            <template v-for="zona in zonas">
+                                <option>{{zona.nombre}}</option>
+                            </template>
+                        </select>
+                    </div>
+                </template>
+            </form>
                 
         </div>
         <div class="col-md-8">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 802 713.23">
 
-                <polygon class="mapa" points="81.5 409.73 120.5 409.73 120.5 328.73 313.5 328.73 313.5 242.73 367.5 242.73 367.5 712.73 81.5 712.73 81.5 409.73"/>
                 <polygon class="mapa" points="0.5 0.73 574.5 0.73 801.5 87.73 801.5 712.73 0.5 712.73 0.5 0.73"/>
+                <polygon class="mapa" points="81.5 409.73 120.5 409.73 120.5 328.73 313.5 328.73 313.5 242.73 367.5 242.73 367.5 712.73 81.5 712.73 81.5 409.73"/>
 
                 <rect v-on:click="asd" v-model="permiso1" :class="classActive" x="0.5" y="0.73" width="69" height="60"/>
                 <text x="30" y="35" fill="blue">1</text>
@@ -78,7 +95,7 @@
 </template>
 
 <script>
-
+    $('.select2').select2();
     import axios from 'axios'
     import toastr from 'toastr'
     import swal from 'sweetalert'
