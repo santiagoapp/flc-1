@@ -39,6 +39,7 @@ Route::group(['middleware' => ['auth']], function() {
 	// rutas para la gestion de usuarios
 	Route::get('/admin/usuarios', 'UserController@index')->name('users');
 	Route::get('/admin/usuarios/get', 'UserController@getUsers');
+	Route::post('/admin/usuarios/add', 'UserController@addUser');
 	Route::post('/admin/usuarios/update', 'UserController@update');
 	Route::get('/admin/usuarios/get/user', 'UserController@getUser');
 	Route::post('/admin/usuarios/delete', 'UserController@deleteUser');

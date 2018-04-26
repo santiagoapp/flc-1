@@ -80,7 +80,7 @@ import axios from 'axios'
                 axios.get(url).then(response => {
                     this.roles = response.data
                 });
-            },
+            }, 
             getPermisos(){
                 var url = 'permisos/get'
                 axios.get(url).then(response => {
