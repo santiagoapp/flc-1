@@ -25829,15 +25829,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 
-$('.select2').select2();
+
 
 
 
@@ -25891,64 +25884,6 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "row" }, [
-    _c("div", { staticClass: "col-md-4" }, [
-      _c(
-        "form",
-        [
-          [
-            _c("label", [_vm._v("Zona (numero de la zona)")]),
-            _vm._v(" "),
-            _c("div", { staticClass: "input-group" }, [
-              _vm._m(0),
-              _vm._v(" "),
-              _c(
-                "select",
-                {
-                  staticClass: "form-control select2",
-                  staticStyle: { width: "100%" },
-                  attrs: {
-                    multiple: "multiple",
-                    "data-placeholder": "Select a State"
-                  }
-                },
-                [
-                  _vm._l(_vm.zonas, function(zona) {
-                    return [_c("option", [_vm._v(_vm._s(zona.nombre))])]
-                  })
-                ],
-                2
-              )
-            ]),
-            _vm._v(" "),
-            _c("span", { staticClass: "help-block" }, [
-              _vm._v("Puesto de trabajo dispuesto en la instalación")
-            ]),
-            _vm._v(" "),
-            _c("label", [_vm._v("Operario (numero de la zona)")]),
-            _vm._v(" "),
-            _c("div", { staticClass: "input-group" }, [
-              _vm._m(1),
-              _vm._v(" "),
-              _c(
-                "select",
-                {
-                  staticClass: "form-control",
-                  attrs: { placeholder: "Select a State" }
-                },
-                [
-                  _vm._l(_vm.zonas, function(zona) {
-                    return [_c("option", [_vm._v(_vm._s(zona.nombre))])]
-                  })
-                ],
-                2
-              )
-            ])
-          ]
-        ],
-        2
-      )
-    ]),
-    _vm._v(" "),
     _c("div", { staticClass: "col-md-8" }, [
       _c(
         "svg",
@@ -26140,27 +26075,121 @@ var render = function() {
           })
         ]
       )
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "col-md-4" }, [
+      _c(
+        "svg",
+        {
+          attrs: { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 235 690" }
+        },
+        [
+          _c("polygon", {
+            staticClass: "mapa",
+            attrs: {
+              points:
+                "0.5 0.5 211.5 0.5 211.5 433.5 54.5 433.5 54.5 605.5 0.5 605.5 0.5 0.5"
+            }
+          }),
+          _vm._v(" "),
+          _c("polygon", {
+            staticClass: "mapa",
+            attrs: {
+              points:
+                "0.5 68.67 102.5 68.67 102.5 81.5 211.5 81.5 211.5 0.5 0.5 0.5 0.5 68.67"
+            }
+          }),
+          _vm._v(" "),
+          _c("rect", {
+            class: _vm.classActive,
+            attrs: { x: "60.5", y: "68.67", width: "16", height: "91.83" }
+          }),
+          _vm._v(" "),
+          _c("rect", {
+            class: _vm.classActive,
+            attrs: { x: "0.5", y: "68.5", width: "60", height: "23.83" }
+          }),
+          _vm._v(" "),
+          _c("line", {
+            class: _vm.classActive,
+            attrs: { x1: "76.5", y1: "331.5", x2: "0.5", y2: "331.5" }
+          }),
+          _vm._v(" "),
+          _c("rect", {
+            class: _vm.classActive,
+            attrs: { x: "60.5", y: "190.5", width: "16", height: "141" }
+          }),
+          _vm._v(" "),
+          _c("rect", {
+            class: _vm.classActive,
+            attrs: { x: "0.5", y: "131.5", width: "36", height: "24" }
+          }),
+          _vm._v(" "),
+          _c("polygon", {
+            class: _vm.classActive,
+            attrs: {
+              points: "0.5 168.67 36.5 168.5 36.5 230.5 0.5 230.5 0.5 168.67"
+            }
+          }),
+          _vm._v(" "),
+          _c("rect", {
+            class: _vm.classActive,
+            attrs: { x: "0.5", y: "243.33", width: "36", height: "37.17" }
+          }),
+          _vm._v(" "),
+          _c("polygon", {
+            class: _vm.classActive,
+            attrs: {
+              points:
+                "167.5 392.5 211.5 392.5 211.5 285.5 157.5 285.5 157.5 384.5 167.5 392.5"
+            }
+          }),
+          _vm._v(" "),
+          _c("rect", {
+            class: _vm.classActive,
+            attrs: { x: "157.5", y: "256.5", width: "54", height: "27" }
+          }),
+          _vm._v(" "),
+          _c("rect", {
+            class: _vm.classActive,
+            attrs: { x: "157.5", y: "199.5", width: "54", height: "44" }
+          }),
+          _vm._v(" "),
+          _c("rect", {
+            class: _vm.classActive,
+            attrs: { x: "157.5", y: "160.5", width: "54", height: "32" }
+          }),
+          _vm._v(" "),
+          _c("rect", {
+            class: _vm.classActive,
+            attrs: { x: "166.5", y: "114.5", width: "37", height: "36" }
+          }),
+          _vm._v(" "),
+          _c("rect", {
+            class: _vm.classActive,
+            attrs: { x: "96.5", y: "114.5", width: "42", height: "59" }
+          }),
+          _vm._v(" "),
+          _c("rect", {
+            class: _vm.classActive,
+            attrs: { x: "96.5", y: "192.5", width: "42", height: "74" }
+          }),
+          _vm._v(" "),
+          _c("rect", {
+            class: _vm.classActive,
+            attrs: { x: "0.5", y: "293.5", width: "36", height: "38" }
+          }),
+          _vm._v(" "),
+          _c("rect", {
+            class: _vm.classActive,
+            attrs: { x: "96.5", y: "283.5", width: "42", height: "105" }
+          })
+        ]
+      )
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "input-group-addon" }, [
-      _c("i", { staticClass: "fa fa-slack" })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "input-group-addon" }, [
-      _c("i", { staticClass: "fa fa-user" })
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {

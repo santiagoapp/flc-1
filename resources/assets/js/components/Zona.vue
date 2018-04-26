@@ -1,36 +1,6 @@
 <template>
     <div class="row">
-        <div class="col-md-4">
-            <form>
-                <template>
-                        <label>Zona (numero de la zona)</label>
-                    <div class="input-group">
-                        <div class="input-group-addon">
-                            <i class="fa fa-slack"></i>
-                        </div>
-                        <select class="form-control select2" multiple="multiple" data-placeholder="Select a State"
-                        style="width: 100%;">
-                            <template v-for="zona in zonas">
-                                <option>{{zona.nombre}}</option>
-                            </template>
-                        </select>
-                    </div>
-                    <span class="help-block">Puesto de trabajo dispuesto en la instalación</span>
-                    <label>Operario (numero de la zona)</label>
-                    <div class="input-group">
-                        <div class="input-group-addon">
-                            <i class="fa fa-user"></i>
-                        </div>
-                        <select class="form-control" placeholder="Select a State">
-                            <template v-for="zona in zonas">
-                                <option>{{zona.nombre}}</option>
-                            </template>
-                        </select>
-                    </div>
-                </template>
-            </form>
-                
-        </div>
+
         <div class="col-md-8">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 802 713.23">
 
@@ -90,12 +60,35 @@
 
             </svg>
         </div>
+        <div class="col-md-4">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 235 690">
+
+                <polygon class="mapa" points="0.5 0.5 211.5 0.5 211.5 433.5 54.5 433.5 54.5 605.5 0.5 605.5 0.5 0.5"/>
+                <polygon class="mapa" points="0.5 68.67 102.5 68.67 102.5 81.5 211.5 81.5 211.5 0.5 0.5 0.5 0.5 68.67"/>
+                <rect :class="classActive" x="60.5" y="68.67" width="16" height="91.83"/>
+                <rect :class="classActive" x="0.5" y="68.5" width="60" height="23.83"/>
+                <line :class="classActive" x1="76.5" y1="331.5" x2="0.5" y2="331.5"/>
+                <rect :class="classActive" x="60.5" y="190.5" width="16" height="141"/>
+                <rect :class="classActive" x="0.5" y="131.5" width="36" height="24"/>
+                <polygon :class="classActive" points="0.5 168.67 36.5 168.5 36.5 230.5 0.5 230.5 0.5 168.67"/>
+                <rect :class="classActive" x="0.5" y="243.33" width="36" height="37.17"/>
+                <polygon :class="classActive" points="167.5 392.5 211.5 392.5 211.5 285.5 157.5 285.5 157.5 384.5 167.5 392.5"/>
+                <rect :class="classActive" x="157.5" y="256.5" width="54" height="27"/>
+                <rect :class="classActive" x="157.5" y="199.5" width="54" height="44"/>
+                <rect :class="classActive" x="157.5" y="160.5" width="54" height="32"/>
+                <rect :class="classActive" x="166.5" y="114.5" width="37" height="36"/>
+                <rect :class="classActive" x="96.5" y="114.5" width="42" height="59"/>
+                <rect :class="classActive" x="96.5" y="192.5" width="42" height="74"/>
+                <rect :class="classActive" x="0.5" y="293.5" width="36" height="38"/>
+                <rect :class="classActive" x="96.5" y="283.5" width="42" height="105"/>
+            </svg>
+        </div>
     </div>
     
 </template>
 
 <script>
-    $('.select2').select2();
+
 import axios from 'axios'
     import toastr from 'toastr'
     import swal from 'sweetalert'
