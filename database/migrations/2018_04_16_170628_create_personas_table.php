@@ -19,6 +19,7 @@ class CreatePersonasTable extends Migration
             $table->string('nombre');
             $table->string('apellido')->nullable();
             $table->string('descripccion')->nullable();
+            $table->string('area')->nullable();
             $table->string('imagen')->nullable();
             $table->integer('cargo_id')->unsigned();
             $table->foreign('cargo_id')->references('id')->on('cargos');

@@ -1,11 +1,38 @@
 <template>
     <div class="row">
-
+        <div class="col-md-4">
+            <form>
+                <div class="box-body">
+                    <div class="form-group">
+                        <label>Nombre de la zona</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Operarios</label>
+                        <select class="form-control" multiple>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Máquinas</label>
+                        <select class="form-control" multiple>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="box-footer">
+                    <button type="submit" class="btn btn-default">Cancelar</button>
+                    <button type="submit" class="btn btn-info pull-right">Actualizar</button>
+                </div>
+            </form>
+        </div>
         <div class="col-md-8">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 802 713.23">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1165 713.23">
 
+                <line class="mapa" x1="916.5" y1="386.73" x2="1009.5" y2="386.73"/>
                 <polygon class="mapa" points="0.5 0.73 574.5 0.73 801.5 87.73 801.5 712.73 0.5 712.73 0.5 0.73"/>
                 <polygon class="mapa" points="81.5 409.73 120.5 409.73 120.5 328.73 313.5 328.73 313.5 242.73 367.5 242.73 367.5 712.73 81.5 712.73 81.5 409.73"/>
+                <polygon class="mapa" points="917.5 712.73 917.5 0.73 1164.5 0.73 1164.5 509.73 983.5 509.73 983.5 712.73 917.5 712.73"/>
 
                 <rect v-on:click="asd" v-model="permiso1" :class="classActive" x="0.5" y="0.73" width="69" height="60"/>
                 <text x="30" y="35" fill="blue">1</text>
@@ -55,34 +82,60 @@
                 <rect :class="classActive" x="367.5" y="417.73" width="61" height="76"/>
                 <text x="395" y="460" fill="blue">16</text>
 
-                <text x="645" y="460" fill="blue">17</text>
                 <rect :class="classActive" x="574.5" y="375.73" width="150" height="167"/>
+                <text x="645" y="460" fill="blue">17</text>
+
+                <polygon :class="classActive" points="917.5 82.73 1040.5 82.73 1040.5 98.73 1164.5 98.73 1164.5 0.73 917.5 0.73 917.5 82.73"/>
+                <text x="1030" y="50" fill="blue">18</text>
+
+                <rect :class="classActive" x="917.5" y="82.73" width="72" height="28"/>
+                <text x="945" y="102" fill="blue">19</text>
+
+                <rect :class="classActive" x="989.5" y="82.73" width="20" height="108"/>
+                <text x="992" y="140" fill="blue">20</text>
+
+                <rect :class="classActive" x="917.5" y="155.73" width="46" height="28"/>
+                <text x="933" y="174" fill="blue">21</text>
+
+                <rect :class="classActive" x="917.5" y="198.73" width="46" height="73"/>
+                <text x="933" y="240" fill="blue">22</text>
+
+                <rect :class="classActive" x="917.5" y="285.73" width="46" height="46"/>
+                <text x="933" y="312" fill="blue">23</text>
+
+                <rect :class="classActive" x="917.5" y="344.73" width="46" height="42"/>
+                <text x="933" y="370" fill="blue">24</text>
+
+                <rect :class="classActive" x="989.5" y="224.73" width="20" height="162"/>
+                <text x="992" y="310" fill="blue">25</text>
+
+                <rect :class="classActive" x="1031.5" y="136.73" width="48" height="70"/>
+                <text x="1048" y="177" fill="blue">26</text>
+
+                <rect :class="classActive" x="1031.5" y="228.73" width="48" height="83"/>
+                <text x="1048" y="275" fill="blue">27</text>
+
+                <rect :class="classActive" x="1031.5" y="335.73" width="48" height="119"/>
+                <text x="1048" y="400" fill="blue">28</text>
+
+                <rect :class="classActive" x="1113.5" y="136.73" width="42" height="42"/>
+                <text x="1127" y="162" fill="blue">29</text>
+
+                <rect :class="classActive" x="1102.5" y="198.73" width="62" height="30"/>
+                <text x="1127" y="218" fill="blue">30</text>
+
+                <rect :class="classActive" x="1102.5" y="242.73" width="62" height="43"/>
+                <text x="1127" y="270" fill="blue">31</text>
+
+                <rect :class="classActive" x="1102.5" y="300.73" width="62" height="31"/>
+                <text x="1127" y="320" fill="blue">32</text>
+
+                <rect :class="classActive" x="1102.5" y="335.73" width="62" height="123"/>
+                <text x="1127" y="400" fill="blue">33</text>
 
             </svg>
         </div>
-        <div class="col-md-4">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 235 690">
 
-                <polygon class="mapa" points="0.5 0.5 211.5 0.5 211.5 433.5 54.5 433.5 54.5 605.5 0.5 605.5 0.5 0.5"/>
-                <polygon class="mapa" points="0.5 68.67 102.5 68.67 102.5 81.5 211.5 81.5 211.5 0.5 0.5 0.5 0.5 68.67"/>
-                <rect :class="classActive" x="60.5" y="68.67" width="16" height="91.83"/>
-                <rect :class="classActive" x="0.5" y="68.5" width="60" height="23.83"/>
-                <line :class="classActive" x1="76.5" y1="331.5" x2="0.5" y2="331.5"/>
-                <rect :class="classActive" x="60.5" y="190.5" width="16" height="141"/>
-                <rect :class="classActive" x="0.5" y="131.5" width="36" height="24"/>
-                <polygon :class="classActive" points="0.5 168.67 36.5 168.5 36.5 230.5 0.5 230.5 0.5 168.67"/>
-                <rect :class="classActive" x="0.5" y="243.33" width="36" height="37.17"/>
-                <polygon :class="classActive" points="167.5 392.5 211.5 392.5 211.5 285.5 157.5 285.5 157.5 384.5 167.5 392.5"/>
-                <rect :class="classActive" x="157.5" y="256.5" width="54" height="27"/>
-                <rect :class="classActive" x="157.5" y="199.5" width="54" height="44"/>
-                <rect :class="classActive" x="157.5" y="160.5" width="54" height="32"/>
-                <rect :class="classActive" x="166.5" y="114.5" width="37" height="36"/>
-                <rect :class="classActive" x="96.5" y="114.5" width="42" height="59"/>
-                <rect :class="classActive" x="96.5" y="192.5" width="42" height="74"/>
-                <rect :class="classActive" x="0.5" y="293.5" width="36" height="38"/>
-                <rect :class="classActive" x="96.5" y="283.5" width="42" height="105"/>
-            </svg>
-        </div>
     </div>
     
 </template>

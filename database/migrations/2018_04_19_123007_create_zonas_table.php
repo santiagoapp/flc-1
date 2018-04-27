@@ -18,7 +18,6 @@ class CreateZonasTable extends Migration
             $table->increments('id');
             $table->string('nombre');
             $table->string('nomenclatura');
-            $table->string('localizacion')->unique();
             $table->string('encargado')->unique();
 
             $table->integer('planta_id')->unsigned();

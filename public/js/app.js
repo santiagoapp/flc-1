@@ -25829,6 +25829,59 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -25884,16 +25937,23 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "row" }, [
+    _vm._m(0),
+    _vm._v(" "),
     _c("div", { staticClass: "col-md-8" }, [
       _c(
         "svg",
         {
           attrs: {
             xmlns: "http://www.w3.org/2000/svg",
-            viewBox: "0 0 802 713.23"
+            viewBox: "0 0 1165 713.23"
           }
         },
         [
+          _c("line", {
+            staticClass: "mapa",
+            attrs: { x1: "916.5", y1: "386.73", x2: "1009.5", y2: "386.73" }
+          }),
+          _vm._v(" "),
           _c("polygon", {
             staticClass: "mapa",
             attrs: {
@@ -25907,6 +25967,14 @@ var render = function() {
             attrs: {
               points:
                 "81.5 409.73 120.5 409.73 120.5 328.73 313.5 328.73 313.5 242.73 367.5 242.73 367.5 712.73 81.5 712.73 81.5 409.73"
+            }
+          }),
+          _vm._v(" "),
+          _c("polygon", {
+            staticClass: "mapa",
+            attrs: {
+              points:
+                "917.5 712.73 917.5 0.73 1164.5 0.73 1164.5 509.73 983.5 509.73 983.5 712.73 917.5 712.73"
             }
           }),
           _vm._v(" "),
@@ -26065,131 +26133,224 @@ var render = function() {
             _vm._v("16")
           ]),
           _vm._v(" "),
+          _c("rect", {
+            class: _vm.classActive,
+            attrs: { x: "574.5", y: "375.73", width: "150", height: "167" }
+          }),
+          _vm._v(" "),
           _c("text", { attrs: { x: "645", y: "460", fill: "blue" } }, [
             _vm._v("17")
           ]),
           _vm._v(" "),
-          _c("rect", {
-            class: _vm.classActive,
-            attrs: { x: "574.5", y: "375.73", width: "150", height: "167" }
-          })
-        ]
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "col-md-4" }, [
-      _c(
-        "svg",
-        {
-          attrs: { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 235 690" }
-        },
-        [
-          _c("polygon", {
-            staticClass: "mapa",
-            attrs: {
-              points:
-                "0.5 0.5 211.5 0.5 211.5 433.5 54.5 433.5 54.5 605.5 0.5 605.5 0.5 0.5"
-            }
-          }),
-          _vm._v(" "),
-          _c("polygon", {
-            staticClass: "mapa",
-            attrs: {
-              points:
-                "0.5 68.67 102.5 68.67 102.5 81.5 211.5 81.5 211.5 0.5 0.5 0.5 0.5 68.67"
-            }
-          }),
-          _vm._v(" "),
-          _c("rect", {
-            class: _vm.classActive,
-            attrs: { x: "60.5", y: "68.67", width: "16", height: "91.83" }
-          }),
-          _vm._v(" "),
-          _c("rect", {
-            class: _vm.classActive,
-            attrs: { x: "0.5", y: "68.5", width: "60", height: "23.83" }
-          }),
-          _vm._v(" "),
-          _c("line", {
-            class: _vm.classActive,
-            attrs: { x1: "76.5", y1: "331.5", x2: "0.5", y2: "331.5" }
-          }),
-          _vm._v(" "),
-          _c("rect", {
-            class: _vm.classActive,
-            attrs: { x: "60.5", y: "190.5", width: "16", height: "141" }
-          }),
-          _vm._v(" "),
-          _c("rect", {
-            class: _vm.classActive,
-            attrs: { x: "0.5", y: "131.5", width: "36", height: "24" }
-          }),
-          _vm._v(" "),
-          _c("polygon", {
-            class: _vm.classActive,
-            attrs: {
-              points: "0.5 168.67 36.5 168.5 36.5 230.5 0.5 230.5 0.5 168.67"
-            }
-          }),
-          _vm._v(" "),
-          _c("rect", {
-            class: _vm.classActive,
-            attrs: { x: "0.5", y: "243.33", width: "36", height: "37.17" }
-          }),
-          _vm._v(" "),
           _c("polygon", {
             class: _vm.classActive,
             attrs: {
               points:
-                "167.5 392.5 211.5 392.5 211.5 285.5 157.5 285.5 157.5 384.5 167.5 392.5"
+                "917.5 82.73 1040.5 82.73 1040.5 98.73 1164.5 98.73 1164.5 0.73 917.5 0.73 917.5 82.73"
             }
           }),
           _vm._v(" "),
-          _c("rect", {
-            class: _vm.classActive,
-            attrs: { x: "157.5", y: "256.5", width: "54", height: "27" }
-          }),
+          _c("text", { attrs: { x: "1030", y: "50", fill: "blue" } }, [
+            _vm._v("18")
+          ]),
           _vm._v(" "),
           _c("rect", {
             class: _vm.classActive,
-            attrs: { x: "157.5", y: "199.5", width: "54", height: "44" }
+            attrs: { x: "917.5", y: "82.73", width: "72", height: "28" }
           }),
+          _vm._v(" "),
+          _c("text", { attrs: { x: "945", y: "102", fill: "blue" } }, [
+            _vm._v("19")
+          ]),
           _vm._v(" "),
           _c("rect", {
             class: _vm.classActive,
-            attrs: { x: "157.5", y: "160.5", width: "54", height: "32" }
+            attrs: { x: "989.5", y: "82.73", width: "20", height: "108" }
           }),
+          _vm._v(" "),
+          _c("text", { attrs: { x: "992", y: "140", fill: "blue" } }, [
+            _vm._v("20")
+          ]),
           _vm._v(" "),
           _c("rect", {
             class: _vm.classActive,
-            attrs: { x: "166.5", y: "114.5", width: "37", height: "36" }
+            attrs: { x: "917.5", y: "155.73", width: "46", height: "28" }
           }),
+          _vm._v(" "),
+          _c("text", { attrs: { x: "933", y: "174", fill: "blue" } }, [
+            _vm._v("21")
+          ]),
           _vm._v(" "),
           _c("rect", {
             class: _vm.classActive,
-            attrs: { x: "96.5", y: "114.5", width: "42", height: "59" }
+            attrs: { x: "917.5", y: "198.73", width: "46", height: "73" }
           }),
+          _vm._v(" "),
+          _c("text", { attrs: { x: "933", y: "240", fill: "blue" } }, [
+            _vm._v("22")
+          ]),
           _vm._v(" "),
           _c("rect", {
             class: _vm.classActive,
-            attrs: { x: "96.5", y: "192.5", width: "42", height: "74" }
+            attrs: { x: "917.5", y: "285.73", width: "46", height: "46" }
           }),
+          _vm._v(" "),
+          _c("text", { attrs: { x: "933", y: "312", fill: "blue" } }, [
+            _vm._v("23")
+          ]),
           _vm._v(" "),
           _c("rect", {
             class: _vm.classActive,
-            attrs: { x: "0.5", y: "293.5", width: "36", height: "38" }
+            attrs: { x: "917.5", y: "344.73", width: "46", height: "42" }
           }),
+          _vm._v(" "),
+          _c("text", { attrs: { x: "933", y: "370", fill: "blue" } }, [
+            _vm._v("24")
+          ]),
           _vm._v(" "),
           _c("rect", {
             class: _vm.classActive,
-            attrs: { x: "96.5", y: "283.5", width: "42", height: "105" }
-          })
+            attrs: { x: "989.5", y: "224.73", width: "20", height: "162" }
+          }),
+          _vm._v(" "),
+          _c("text", { attrs: { x: "992", y: "310", fill: "blue" } }, [
+            _vm._v("25")
+          ]),
+          _vm._v(" "),
+          _c("rect", {
+            class: _vm.classActive,
+            attrs: { x: "1031.5", y: "136.73", width: "48", height: "70" }
+          }),
+          _vm._v(" "),
+          _c("text", { attrs: { x: "1048", y: "177", fill: "blue" } }, [
+            _vm._v("26")
+          ]),
+          _vm._v(" "),
+          _c("rect", {
+            class: _vm.classActive,
+            attrs: { x: "1031.5", y: "228.73", width: "48", height: "83" }
+          }),
+          _vm._v(" "),
+          _c("text", { attrs: { x: "1048", y: "275", fill: "blue" } }, [
+            _vm._v("27")
+          ]),
+          _vm._v(" "),
+          _c("rect", {
+            class: _vm.classActive,
+            attrs: { x: "1031.5", y: "335.73", width: "48", height: "119" }
+          }),
+          _vm._v(" "),
+          _c("text", { attrs: { x: "1048", y: "400", fill: "blue" } }, [
+            _vm._v("28")
+          ]),
+          _vm._v(" "),
+          _c("rect", {
+            class: _vm.classActive,
+            attrs: { x: "1113.5", y: "136.73", width: "42", height: "42" }
+          }),
+          _vm._v(" "),
+          _c("text", { attrs: { x: "1127", y: "162", fill: "blue" } }, [
+            _vm._v("29")
+          ]),
+          _vm._v(" "),
+          _c("rect", {
+            class: _vm.classActive,
+            attrs: { x: "1102.5", y: "198.73", width: "62", height: "30" }
+          }),
+          _vm._v(" "),
+          _c("text", { attrs: { x: "1127", y: "218", fill: "blue" } }, [
+            _vm._v("30")
+          ]),
+          _vm._v(" "),
+          _c("rect", {
+            class: _vm.classActive,
+            attrs: { x: "1102.5", y: "242.73", width: "62", height: "43" }
+          }),
+          _vm._v(" "),
+          _c("text", { attrs: { x: "1127", y: "270", fill: "blue" } }, [
+            _vm._v("31")
+          ]),
+          _vm._v(" "),
+          _c("rect", {
+            class: _vm.classActive,
+            attrs: { x: "1102.5", y: "300.73", width: "62", height: "31" }
+          }),
+          _vm._v(" "),
+          _c("text", { attrs: { x: "1127", y: "320", fill: "blue" } }, [
+            _vm._v("32")
+          ]),
+          _vm._v(" "),
+          _c("rect", {
+            class: _vm.classActive,
+            attrs: { x: "1102.5", y: "335.73", width: "62", height: "123" }
+          }),
+          _vm._v(" "),
+          _c("text", { attrs: { x: "1127", y: "400", fill: "blue" } }, [
+            _vm._v("33")
+          ])
         ]
       )
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-4" }, [
+      _c("form", [
+        _c("div", { staticClass: "box-body" }, [
+          _c("div", { staticClass: "form-group" }, [
+            _c("label", [_vm._v("Nombre de la zona")]),
+            _vm._v(" "),
+            _c("input", {
+              staticClass: "form-control",
+              attrs: { type: "text" }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group" }, [
+            _c("label", [_vm._v("Operarios")]),
+            _vm._v(" "),
+            _c(
+              "select",
+              { staticClass: "form-control", attrs: { multiple: "" } },
+              [_c("option", { attrs: { value: "" } })]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group" }, [
+            _c("label", [_vm._v("Máquinas")]),
+            _vm._v(" "),
+            _c(
+              "select",
+              { staticClass: "form-control", attrs: { multiple: "" } },
+              [_c("option", { attrs: { value: "" } })]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "box-footer" }, [
+          _c(
+            "button",
+            { staticClass: "btn btn-default", attrs: { type: "submit" } },
+            [_vm._v("Cancelar")]
+          ),
+          _vm._v(" "),
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-info pull-right",
+              attrs: { type: "submit" }
+            },
+            [_vm._v("Actualizar")]
+          )
+        ])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {

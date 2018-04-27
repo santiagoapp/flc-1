@@ -52,9 +52,10 @@ class PersonasTableSeeder extends Seeder
     	foreach ($apellidos as $key => $apellido) {
     		factory(App\Persona::class)->create([
     			'nombre' => $nombres[$key],
-    			'apellido' => $apellido,
-    			'cargo_id' => rand(1,14)
-    		]);
+                'apellido' => $apellido,
+                'area' => 'planta',
+                'cargo_id' => rand(1,14)
+            ]);
     	}
     }
 }
